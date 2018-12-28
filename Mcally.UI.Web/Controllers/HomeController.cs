@@ -8,32 +8,30 @@ namespace Mcally.UI.Web.Controllers
 {
     public class HomeController : Controller
     {
-       
-
-        public ActionResult login()
+        public ActionResult Index()
         {
-           
             return View();
         }
+   
 
-        public ActionResult index1()
+        public ActionResult MainHtml()
         {
 
             return View();
         }
-        public ActionResult index2()
+        public ActionResult Index2()
         {
 
             return View();
         }
 
-        public ActionResult index3()
+        public ActionResult Index3()
         {
 
             return View();
         }
 
-        public ActionResult index4()
+        public ActionResult Index4()
         {
 
             return View();

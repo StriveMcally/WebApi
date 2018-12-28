@@ -1,0 +1,17 @@
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\Mcally.Web.Base.dll
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\Mcally.Web.Base.pdb
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\Newtonsoft.Json.dll
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\System.Net.Http.Formatting.dll
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\System.Web.Http.dll
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\System.Web.Http.WebHost.dll
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\Newtonsoft.Json.xml
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\System.Net.Http.Formatting.xml
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\System.Web.Http.xml
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\System.Web.Http.WebHost.xml
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\zh-Hans\System.Net.Http.Formatting.resources.dll
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\bin\Release\zh-Hans\System.Web.Http.resources.dll
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\obj\Release\Mcally.Web.Base.csprojAssemblyReference.cache
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\obj\Release\Mcally.Web.Base.csproj.CoreCompileInputs.cache
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\obj\Release\Mcally.Web.Base.csproj.CopyComplete
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\obj\Release\Mcally.Web.Base.dll
+F:\doloading\Mcally.UI.Web-master\WebApi\Mcally.Web.Base\obj\Release\Mcally.Web.Base.pdb
