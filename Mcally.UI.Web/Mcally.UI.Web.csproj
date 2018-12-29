@@ -47,6 +47,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RazorGenerator.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorGenerator.Mvc.2.4.9\lib\net40\RazorGenerator.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -103,6 +106,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0.3\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -147,42 +153,12 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Home\Index.generated.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Index.cshtml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Home\Index21.generated.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Index2.cshtml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Home\Index31.generated.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Index3.cshtml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Home\Index41.generated.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Index4.cshtml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Home\MainHtml.generated.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MainHtml.cshtml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Home\Welcome.generated.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Welcome.cshtml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\animate.css" />
@@ -222,23 +198,7 @@
     <Content Include="Scripts\ajax\libs\layui\css\modules\laydate\default\font\iconfont.ttf" />
     <Content Include="Scripts\ajax\libs\layui\css\modules\laydate\default\font\iconfont.woff" />
     <Content Include="Scripts\ajax\libs\summernote\font\summernote.woff" />
-    <Content Include="Views\Home\Index2.cshtml">
-      <Generator>RazorGenerator</Generator>
-      <LastGenOutput>Index21.generated.cs</LastGenOutput>
-    </Content>
-    <Content Include="Views\Home\Index3.cshtml">
-      <Generator>RazorGenerator</Generator>
-      <LastGenOutput>Index31.generated.cs</LastGenOutput>
-    </Content>
-    <Content Include="Views\Home\Index4.cshtml">
-      <Generator>RazorGenerator</Generator>
-      <LastGenOutput>Index41.generated.cs</LastGenOutput>
-    </Content>
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
-    <Content Include="Views\Home\Index.cshtml">
-      <Generator>RazorGenerator</Generator>
-      <LastGenOutput>Index.generated.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\ajax\libs\beautifyhtml\beautifyhtml.js" />
     <Content Include="Scripts\ajax\libs\blockUI\jquery.blockUI.js" />
     <Content Include="Scripts\ajax\libs\bootstrap-table\bootstrap-table.min.css" />
@@ -346,17 +306,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Welcome.cshtml">
-      <Generator>RazorGenerator</Generator>
-      <LastGenOutput>Welcome.generated.cs</LastGenOutput>
-    </Content>
-    <Content Include="Views\Home\MainHtml.cshtml">
-      <Generator>RazorGenerator</Generator>
-      <LastGenOutput>MainHtml.generated.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -371,6 +323,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\Simple-Line-Icons.woff2" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HTMLUI\HTMLUI.csproj">
+      <Project>{7767a458-43aa-4886-879f-ebc60b521f40}</Project>
+      <Name>HTMLUI</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
